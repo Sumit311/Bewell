@@ -1,0 +1,60 @@
+/* Heading */
+.title {
+  color: black;
+  text-decoration:dotted;
+  font-size: 70px;
+  text-align: center;
+
+}
+body {
+  background-color: rgb(239, 244, 236);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* flickity cell container */
+.carousel {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #eee;
+  height: 400px;
+}
+img {
+  width: 100%;
+  height: 400px;
+}
+/* flickity cells*/
+.carousel-cell {
+  width: 66%;
+  height: 400px;
+  margin-right: 10px;
+  background: rgb(244, 246, 244);
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 0px;
+}
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+.nav{
+  font-size: larger;
+  background-color: rgb(234, 244, 234);
+margin-left: 5%;
+}
